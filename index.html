@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9341f43531.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+
+            <img class="logo" src="img/logo.png">
+            <ul>
+                <li><img src="img/notification.png"></li>
+                <li><img src="img/inbox.png"></li>
+                <li><img src="img/video.png"></li>
+            </ul>
+
+        </div>
+
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="img/search.png">
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="img/profile-pic.png">
+            </div>
+
+        </div>
+
+    <!--------------------- settings menu ---------------- -->
+        <div class="settings-menu">
+
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png">
+                    <div>
+                        <p>Văn Tuấn</p>
+                        <a href="#">Xem trang cá nhân của bạn</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="img/feedback.png">
+                    <div>
+                        <p>Đóng góp ý kiến</p>
+                        <a href="#">Góp phần cải thiện phiên bản Mostbook mới.</a> 
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-link">
+                    <img class="settings-icon" src="img/setting.png">
+                    <a href="#"> Cài đặt & quyền riêng tư <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-link">
+                    <img class="settings-icon" src="img/help.png">
+                    <a href="#"> Trợ giúp & hỗ trợ <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-link">
+                    <img class="settings-icon" src="img/display.png">
+                    <a href="#"> Màn hình & trợ năng <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-link">
+                    <img class="settings-icon" src="img/logout.png">
+                    <a href="#">Đăng xuất <img src="img/arrow.png" width="10px"></a>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!---------------------- left-sidebar --------------------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="img/news.png"> Văn Tuấn</a>
+                <a href="#"><img src="img/friends.png"> Bạn bè</a>
+                <a href="#"><img src="img/group.png"> Nhóm</a>
+                <a href="#"><img src="img/marketplace.png"> Marketplace</a>
+                <a href="#"><img src="img/watch.png"> Video</a>
+                <a href="#">Xem thêm</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Lối tắt của bạn</p>
+                <a href="#"><img src="img/shortcut-1.png"> Bộ tộc MixiGaming</a>
+                <a href="#"><img src="img/shortcut-2.png"> Tổ Nhím 🦔</a>
+                <a href="#"><img src="img/shortcut-3.png"> Dâm Bô Động</a>
+                <a href="#"><img src="img/shortcut-4.png"> J2TEAM Community</a>
+            </div>
+        </div>
+        <!--------------------- main content------------------------->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="img/upload.png">
+                    <p>Tạo tin</p>
+                </div>
+                <div class="story story2">
+                    <img src="img/member-1.png">
+                    <p>Than Thi Thuy Linh</p>
+                </div>
+                <div class="story story3">
+                    <img src="img/member-2.png">
+                    <p>Hoài Nam</p>
+                </div>
+                <div class="story story4">
+                    <img src="img/member-3.png">
+                    <p>Kiên Định</p>
+                </div>
+                <div class="story story5">
+                    <img src="img/member-4.png">
+                    <p>Ngân</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png">
+                    <div>
+                        <p>Văn Tuấn</p>
+                        <small> <i class="fas fa-globe-asia"></i> Công khai <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea irows="3" placeholder="Tuấn ơi, bạn đang nghĩ gì thế?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="img/live-video.png"> Video trực tiếp</a>
+                        <a href="#"><img src="img/photo.png"> Ảnh/Video</a>
+                        <a href="#"><img src="img/feeling.png"> Cảm xúc/Hoạt động</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-contrainer">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Văn Tuấn</p>
+                            <span>2 tháng 5</span> <i class="fas fa-globe-asia"></i>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"> Vì một ngày còn sống là một ngày đắm say <br>
+                    Và ngày đẹp trời nhất là ngày mình nắm tay.</p>
+                <img class="post-img" src="img/feed-image-1.png" >
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="img/like-blue.png"> 168</div>
+                        <div><img src="img/comments.png"> 33</div>
+                        <div><img src="img/share.png"> </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-contrainer">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Văn Tuấn</p>
+                            <span>1 tháng 5 </span> <i class="fas fa-globe-asia"></i>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"> Miền Nam có Mai, Miền Bắc có Đào <br>
+                    Miền nào có emmmmm 🤭</p>
+                <img class="post-img" src="img/feed-image-2.png" >
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="img/like.png"> 155</div>
+                        <div><img src="img/comments.png"> 39</div>
+                        <div><img src="img/share.png"> </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-contrainer">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/member-1.png">
+                        <div>
+                            <p>Than Thi Thuy Linh</p>
+                            <span> <i class="fas fa-star"></i> Yêu thích . 28 tháng 4</span> <i class="fas fa-globe-asia"></i>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"> Hôm nay em đi học <br>
+                    Bị điểm kém môn anh<br>
+                    Cô dạy "Yêu" là "Love"
+                    Mà em viết tên anh. 😗 </p>
+                <img class="post-img" src="img/feed-image-3.png" >
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="img/like-blue.png"> 247</div>
+                        <div><img src="img/comments.png"> 48</div>
+                        <div><img src="img/share.png"> </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-contrainer">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/member-1.png">
+                        <div>
+                            <p>Than Thi Thuy Linh</p>
+                            <span> <i class="fas fa-star"></i> Yêu thích . 8 tháng 4</span> <i class="fas fa-globe-asia"></i>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">I need a man who loves me like my father loves my mom </p>
+                <img class="post-img" src="img/feed-image-4.png" >
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="img/like-blue.png"> 500</div>
+                        <div><img src="img/comments.png"> 200</div>
+                        <div><img src="img/share.png"> 27</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-contrainer">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Văn Tuấn</p>
+                            <span>25 tháng 2</span> <i class="fas fa-globe-asia"></i>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"> Chúc bạn sớm hoàn thành nghĩa vụ.</p>
+                <img class="post-img" src="img/feed-image-5.png" >
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="img/like-blue.png"> 112</div>
+                        <div><img src="img/comments.png"> 18</div>
+                        <div><img src="img/share.png"> </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Xem thêm</button>
+
+        </div>
+
+        
+
+
+        <!--------------------- right-sidebar ------------------------->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Sự kiện</h4>
+                <a href="#">Hiện tất cả</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>24</h3>
+                    <span>tháng 7</span>
+                </div>
+                <div class="right-event">
+                    <h4>Sinh nhật Than Thi Thuy Linh</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>  Thái Nguyên</p>
+                    <a href="#">Thêm thông tin</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>2-3</h3>
+                    <span>tháng 9</span>
+                </div>
+                <div class="right-event">
+                    <h4>vòng loại cuối cùng World Cup 2022</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>  online . Facebook Live</p>
+                    <a href="#">Thêm thông tin</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Quảng cáo</h4>
+                <a href="#">Đóng</a>
+            </div>
+            <img class="sidebar-ads" src="img/advertisement.png">
+
+            <div class="sidebar-title">
+                <h4>Người liên hệ</h4>
+                <a href="#">Ẩn trò chuyện</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-1.png">
+                </div>
+                <p>Than Thi Thuy Linh</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-2.png">
+                </div>
+                <p>Hoài Nam</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-3.png">
+                </div>
+                <p>Kiên Định</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-4.png">
+                </div>
+                <p>Ngân</p>
+            </div>
+           
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2021 - Easy Tutorials Youtuber Channel</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
